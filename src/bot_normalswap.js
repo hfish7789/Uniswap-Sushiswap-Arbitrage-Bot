@@ -37,7 +37,6 @@ if (localDeplyment) {
     web3 = new Web3(localProvider)
 
 } else {
-
     /* In this case we use an infura provider for mainnet, you could use whatever you want but 
     it cant be a http provider because it doesnt support web3 subscriptions (events).*/
     web3 = new Web3(`wss://mainnet.infura.io/ws/v3/${projectId}`)
